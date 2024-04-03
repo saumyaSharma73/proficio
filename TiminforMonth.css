@@ -1,0 +1,24 @@
+/* CSS for the graph box */
+.graph-box {
+    width: 50%; /* Adjust width as needed */
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* CSS for the dropdown box */
+.dropdown-box {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+/* CSS for the dropdown select */
+select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}

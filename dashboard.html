@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="Sidebar.css">
+    <link rel="stylesheet" href="tasks.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="EmployeeLeave.css">
+    <link rel="stylesheet" href="TiminforMonth.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <span class="title" style="margin-right: 50px;"><h5>Dashboard</h5></span>    
+      <div class="navbar-search">
+        <i class="fa fa-search lg"></i>
+          <input type="text" class="search-input" placeholder="Search ">  
+      </div>
+  </nav>
+  
+   <!-- sidebar -->
+   <div id="sidebar">
+    <div class="navbar-logo">
+      <img src="C:\Users\delli\OneDrive\Desktop\logo2.png" alt="Logo" class="logo">
+    </div>
+    <ul>
+        <li><a href="#dashboard"><i class="fa fa-tachometer"></i> <br>Dashboard</a></li>
+        <li><a href="#profile"><i class="fa fa-user"></i><br> Profile</a></li>
+        <li><a href="#employee"><i class="fa fa-users"></i> <br>Employee</a></li>
+        <li><a href="#attendance"><i class="fa fa-clipboard"></i><br>Attendance</a></li>
+        <li><a href="#leave"><i class="fa fa-calendar-times-o"></i><br>Leave</a></li>
+        <li><a href="#overtime"><i class="fa fa-clock-o"></i><br>Overtime</a></li>
+        <li><a href="#holiday"><i class="fa fa-plane"></i><br>Holiday</a></li>
+        <li><a href="#loan"><i class="fa fa-money"></i><br>Loan</a></li>
+        <li><a href="#settings"><i class="fa fa-cog"></i><br>Settings</a></li>
+    </ul>
+</div>
+
+      <!-- mytasks -->
+      <br><br><br><br><br>
+            <div class="container">
+        <h1 class="title" >My Tasks <a href="#" class="view-link" style="margin-right: 50px;">View</a></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Task Name</th>
+                    <th>Work Logs</th>
+                    <th>Due Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>UBS HRMS</td>
+                    <td>Invoice Design</td>
+                    <td>01h 04m</td>
+                    <td>27th March, 2024</td>
+                </tr>
+                <tr>
+                    <td>UBS HRMS</td>
+                    <td>Dashboard R&D</td>
+                    <td>01h 42m</td>
+                    <td>27th March, 2024</td>
+                </tr>
+                <tr>
+                    <td>UBS HRMS</td>
+                    <td>Dashboard Design</td>
+                    <td>01h 42m</td>
+                    <td>27th March, 2024</td>
+                </tr>
+                <tr>
+                    <td>UBS HRMS</td>
+                    <td>Admin Design</td>
+                    <td>01h 42m</td>
+                    <td>27th March, 2024</td>
+                </tr>
+                <tr>
+                    <td>UBS PMS</td>
+                    <td>App Design</td>
+                    <td>01h 42m</td>
+                    <td>27th March, 2024</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+      <!-- attendance-table -->
+      <div class="attbox" style="margin-left: 550px;margin-bottom: 50px;margin-top: 50px;">
+      <div class="container" style="background-color: 	#daffe7;">
+        <!-- Attendance Box -->
+        <div class="attendance-container">
+            <div class="attendance-box">
+                <h2 class="box-title">Your Attendance <a href="#" class="view-link" style="margin-right: 50px;">View</a></h2>
+                <hr>
+                <table class="attendance-stats">
+                    <tr>
+                        <td class="attendance-section">
+                            <span class="section-label">Present</span>
+                            <br><br>
+                            <span class="section-value" style="color:black">260</span>
+                        </td>
+                        <td class="attendance-section">
+                            <span class="section-label">Absent</span>
+                            <br><br>
+                            <span class="section-value" style="color:black">15</span>
+                        </td>
+                        <td class="attendance-section">
+                            <span class="section-label">Late Coming</span>
+                            <br><br>
+                            <span class="section-value" style="color:black">05</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Leave Box -->
+        <div class="leave-container" style="background-color: 	#daffe7;">
+            <div class="leave-box" >
+                <h2 class="box-title" >Your Leave <a href="#" class="view-link" style="margin-right: 50px;">View</a></h2>
+                <hr>
+                <table class="leave-stats">
+                    <tr>
+                        <td class="leave-section">
+                            <span class="section-label">Balanced</span>
+                            <br><br>
+                            <span class="section-value" style="color:black">12</span>
+                        </td>
+                        <td class="leave-section">
+                            <span class="section-label">Used</span>
+                            <br><br>
+                            <span class="section-value" style="color:black">04</span>
+                        </td>
+                        <td class="leave-section">
+                            <span class="section-label">Remaining</span>
+                            <br><br>
+                            <span class="section-value" style="color:black">08</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+
+    <!-- Employee on Leave -->
+    <div class="on-leave-container">
+      <div class="on-leave-header">
+          <h3>Employees on leave</h3>
+          <select class="week-dropdown">
+              <option value="this-week" selected>This Week</option>
+              <option value="this-week" selected>Previous Week</option>
+              <option value="this-week" selected>Previous Month</option>
+          </select>
+      </div>
+      <hr><br>
+      <div class="employee-list">
+          <div class="employee">
+            <img src="https://cdn3.vectorstock.com/i/1000x1000/67/42/user-icon-vector-9916742.jpg" style="width: 20px;height: 20px;">
+              <span class="name">John Doe</span>
+              <span class="position">UI/UX Designer</span>
+              <span class="leave-date">23 March, 2024</span>
+          </div>
+          <div class="employee">
+            <img src="https://cdn3.vectorstock.com/i/1000x1000/67/42/user-icon-vector-9916742.jpg" style="width: 20px;height: 20px;">
+              <span class="name">Nevine Acotanza</span>
+              <span class="position">iOS Developer</span>
+              <span class="leave-date">28 March, 2024</span>
+          </div>
+          <div class="employee">
+            <img src="https://cdn3.vectorstock.com/i/1000x1000/67/42/user-icon-vector-9916742.jpg" style="width: 20px;height: 20px;">
+              <span class="name">Yvenide Belizaire</span>
+              <span class="position">Wordpress Developer</span>
+               <span class="leave-date">30 March, 2024</span>
+          </div>
+         
+      </div>
+  </div>
+  
+
+  <!-- Upcoming Holiday -->
+  <div class="on-leave-container">
+    <div class="on-leave-header" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAd1WrXQwho0a7ewEQDWBd2U6WofjTiy9Hvw&usqp=CAU);">
+        <h3>Upcoming Holidays</h3>
+    </div>
+    <hr><br>
+    <div class="employee-list">
+        <div class="employee">
+          <img src="https://image.similarpng.com/very-thumbnail/2020/06/Colorful-kite-flying-vector-PNG.png" style="width: 40px;height: 40px;">
+            <span class="name">Kite Festival</span>
+            <span class="leave-date">12 March, 2024</span>
+        </div>
+        <div class="employee">
+          <img src="https://png.pngtree.com/png-clipart/20230215/ourmid/pngtree-holi-colors-splash-powder-png-image_6602987.png" style="width: 40px;height: 40px;">
+            <span class="name">Holi</span>
+            <span class="leave-date">26 March, 2024</span>
+        </div>
+        <div class="employee">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTieuuGy3BhQGlliLZpyqVuFj7HUWb8MWuCKg&usqp=CAU" style="width: 40px;height: 40px;">
+            <span class="name">Diwali</span>
+            <span class="leave-date">30 November, 2024</span>
+        </div>
+        <div class="employee">
+          <img src="https://image.similarpng.com/very-thumbnail/2020/07/Colorful-christmas-tree-vector-png-.png" style="width: 40px;height: 40px;">
+            <span class="name">Christmas</span>
+            <span class="leave-date">25 December, 2024</span>
+        </div>
+        <div class="employee">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhh9gujHf2jDhZ-5YNzfW3sm0ngCFknu6oSg&usqp=CAU" style="width: 40px;height: 40px;">
+            <span class="name">Sports Day</span>
+            <span class="leave-date">30 Jul, 2024</span>
+        </div>
+    </div>
+</div>
+
+
+<!-- Upcoming Birthday -->
+
+<div class="on-leave-container">
+  <div class="on-leave-header">
+    <div class="photo" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfQAO_TD335i_8hfEAoxY-SIJLwz238b22mA&usqp=CAU);">
+    <h3 >Upcoming</h3>
+    <h3 style="margin-right: 60px;"> Birthdays!!</h3>
+    </div>
+      <img src="https://img.freepik.com/free-psd/happy-birthday-letters-collection_23-2150587032.jpg" style="width: 300px;height: 100px;">
+  </div>
+  <hr><br>
+  <div class="employee-list">
+      <div class="employee">
+        <img src="https://cdn3.vectorstock.com/i/1000x1000/67/42/user-icon-vector-9916742.jpg" style="width: 20px;height: 20px;">
+          <span class="name">Reva Gomez</span>
+          <span class="position">UI/UX Designer</span>
+          <span class="leave-date">29 March, 2024</span>
+      </div>
+      <div class="employee">
+        <img src="https://cdn3.vectorstock.com/i/1000x1000/67/42/user-icon-vector-9916742.jpg" style="width: 20px;height: 20px;">
+          <span class="name">Benny Acotanza</span>
+          <span class="position">iOS Developer</span>
+          <span class="leave-date">30 March, 2024</span>
+      </div>
+      <div class="employee">
+        <img src="https://cdn3.vectorstock.com/i/1000x1000/67/42/user-icon-vector-9916742.jpg" style="width: 20px;height: 20px;">
+          <span class="name">Yvenide Beganiz</span>
+          <span class="position">Wordpress Developer</span>
+           <span class="leave-date">30 April, 2024</span>
+      </div>
+      <div class="employee">
+        <img src="https://cdn3.vectorstock.com/i/1000x1000/67/42/user-icon-vector-9916742.jpg" style="width: 20px;height: 20px;">
+        <span class="name">Andrew Nolan</span>
+        <span class="position">Wordpress Developer</span>
+         <span class="leave-date">3 May, 2024</span>
+    </div>
+     
+  </div>
+  </div>
+
+  <!-- New Joins -->
+
+  <div class="on-leave-container">
+    <div class="on-leave-header">
+        <h3>New Joins</h3>
+    </div>
+    <hr><br>
+    <div class="employee-list">
+        <div class="employee">
+          <img src="https://cdn3.vectorstock.com/i/1000x1000/67/42/user-icon-vector-9916742.jpg" style="width: 20px;height: 20px;">
+            <span class="name">Reva Gomez</span>
+            <span class="position">UI/UX Designer</span>
+            <span class="leave-date">22 Feb, 2024</span>
+        </div>
+        <div class="employee">
+          <img src="https://cdn3.vectorstock.com/i/1000x1000/67/42/user-icon-vector-9916742.jpg" style="width: 20px;height: 20px;">
+            <span class="name">Benny Acotanza</span>
+            <span class="position">iOS Developer</span>
+            <span class="leave-date">20 January, 2024</span>
+        </div>
+        <div class="employee">
+          <img src="https://cdn3.vectorstock.com/i/1000x1000/67/42/user-icon-vector-9916742.jpg" style="width: 20px;height: 20px;">
+            <span class="name">Yvenide Beganiz</span>
+            <span class="position">Wordpress Developer</span>
+             <span class="leave-date">28 January, 2024</span>
+        </div>
+        <div class="employee">
+          <img src="https://cdn3.vectorstock.com/i/1000x1000/67/42/user-icon-vector-9916742.jpg" style="width: 20px;height: 20px;">
+          <span class="name">Andrew Nolan</span>
+          <span class="position">Wordpress Developer</span>
+           <span class="leave-date">4 April, 2024</span>
+      </div>
+       
+    </div>
+    </div>
+   
+    <!-- Quick Links -->
+
+  <!-- Quick Links -->
+<div class="on-leave-container">
+  <div class="on-leave-header">
+      <h3>Quick Links</h3>
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/013/758/060/small/abstract-link-logo-illustration-in-trendy-and-minimal-style-png.png" style="width:60px;height:40px;">
+  </div>
+  <hr><br>
+  <div class="employee-list">
+      <div class="employee">
+          <i class="fa fa-link">&nbsp;&nbsp;&nbsp;<a href="#">Employee Policy 2024</a></i>
+          
+      </div>
+      <div class="employee">
+        <i class="fa fa-link">&nbsp;&nbsp;&nbsp;<a href="#">Shift Policy 2024</a></i>
+      </div>
+      <div class="employee">
+        <i class="fa fa-link">&nbsp;&nbsp;&nbsp;<a href="#">Leave Policy 2024</a></i>
+      </div>
+      <div class="employee">
+        <i class="fa fa-link">&nbsp;&nbsp;&nbsp;<a href="#">Overtime Policy 2024</a></i>
+      </div>
+  </div>
+</div>
+
+ <!-- Work Anniversary -->
+
+ <div class="on-leave-container">
+  <div class="on-leave-header">
+      <h3>Work Anniversary</h3>
+  </div>
+  <hr><br>
+  <div class="employee-list">
+      <div class="employee">
+        <i class="fa fa-user">&nbsp; <span class="name">John Doe</span></i>
+          <span class="position">Frontend Developer</span>
+          <span class="leave-date">1 year</span>
+      </div>
+      <div class="employee">
+        <i class="fa fa-user">&nbsp;<span class="name">Jane Smith</span></i>
+          <span class="position">Backend Developer</span>
+          <span class="leave-date">2 years</span>
+      </div>
+      <div class="employee">
+        <i class="fa fa-user"> &nbsp;<span class="name">Alice Johnson</span></i>
+          <span class="position">Graphic Designer</span>
+          <span class="leave-date">3 years</span>
+      </div>
+      <div class="employee">
+        <i class="fa fa-user">&nbsp; <span class="name">Bob Williams</span></i>
+          <span class="position">Project Manager</span>
+          <span class="leave-date">3 years</span>
+      </div>
+  </div>
+</div>
+
+<!-- Announcement -->
+
+<div class="on-leave-container">
+  <div class="on-leave-header">
+    <h1 class="title" >Announcements <a href="#" class="view-link" style="margin-right: 500px;">View</a></h1>
+  </div>
+  <hr><br>
+  <div class="employee-list">
+      <div class="employee">
+        <i class="fa fa-users">&nbsp; <span class="name">Office Management Meeting</span></i>
+          <span class="leave-date">March 21,2:00pm</span>
+      </div>
+      <div class="employee">
+        <i class="fa fa-users">&nbsp;<span class="name">Team Leader Meeting</span></i>
+          <span class="leave-date">March 21,4:00pm</span>
+      </div>
+      <div class="employee">
+        <i class="fa fa-users"> &nbsp;<span class="name">Project Manager Meeting</span></i>
+          <span class="leave-date">March 21,7:00pm</span>
+      </div>
+   
+  </div>
+</div>
+
+<!-- Employee of the month -->
+
+<div class="on-leave-container">
+  <div class="on-leave-header" >
+      <h1 class="title">Employee of the Month <a href="#" class="view-link" style="margin-right: 500px;">View</a></h1>
+  </div>
+  <hr><br>
+  <div class="employee-list"  style="background-image: url(https://img.freepik.com/free-psd/realistic-birthday-design-elements_23-2150318108.jpg);">
+      <div class="employee-container">
+          <br><br><br><br><br><br><br>
+          <div class="employee-image">
+              <img src="https://cdn-icons-png.flaticon.com/512/4974/4974985.png" alt="Employee" style="width: 100%; height: 100%; border-radius: 50%;">
+          </div>
+          <br>
+          <div class="employee-name"style="display:flex;margin-left:-50px;">
+            <img src="https://cdn-icons-png.freepik.com/512/12422/12422996.png" style="width: 100px;height: 100px;margin-right: 60px;">
+              <h1>Alice Johnson</h1>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Your timing for this month -->
+
+<div class="graph-box">
+  <h1><u>Your Timing for this Month</u></h1>
+  <!-- Dropdown box -->
+  <div class="dropdown-box">
+      <label for="month-dropdown">Select Month:</label>
+      <select id="month-dropdown" onchange="updateGraph()">
+          <option value="january">January</option>
+          <option value="february">February</option>
+          <option value="march">March</option>
+          <!-- Add more months as needed -->
+      </select>
+  </div>
+
+  <!-- Plotly graph -->
+  <div id="myPlot"></div>
+</div>
+
+<script>
+  // Initial data for January
+  let januaryData = [69, 6, 25];
+  // Data for February
+  let februaryData = [55, 10, 30];
+  // Data for March
+  let marchData = [75, 8, 20];
+  // Add more months data as needed
+  
+  // Function to update the graph based on the selected month
+  function updateGraph() {
+      // Get the selected month from the dropdown
+      let selectedMonth = document.getElementById("month-dropdown").value;
+
+      // Update the data based on the selected month
+      let data;
+      if (selectedMonth === "january") {
+          data = januaryData;
+      } else if (selectedMonth === "february") {
+          data = februaryData;
+      } else if (selectedMonth === "march") {
+          data = marchData;
+      }
+      // Add more conditions for additional months
+
+      // Update the graph with the new data
+      Plotly.restyle("myPlot", "values", [data]);
+  }
+
+  // Initial data for the Plotly graph
+  const xArray = ["Present", "Absent", "Break"];
+  const initialData = januaryData; // Initial data for January
+
+  // Layout configuration for the graph
+  const layout = { title: "in pie chart form:" };
+
+  // Define the data for the graph
+  const data = [{
+      labels: xArray,
+      values: initialData,
+      type: "pie"
+  }];
+
+  // Create the Plotly graph inside the "myPlot" div
+  Plotly.newPlot("myPlot", data, layout);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+My Tasks and Attendance
+ <div class="container">
+    <div class="box-container">
+        <br><br><br><br>
+        <div class ="module">
+        <!-- My Tasks Box -->
+        <div class="box">
+            <h1 class="box-title">My Tasks <a href="#" class="view-link">View</a></h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Task Name</th>
+                        <th>Work Logs</th>
+                        <th>Due Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>UBS HRMS</td>
+                        <td>Invoice Design</td>
+                        <td>01h 04m</td>
+                        <td>27th March, 2024</td>
+                    </tr>
+                    <tr>
+                        <td>UBS HRMS</td>
+                        <td>Dashboard R&D</td>
+                        <td>01h 42m</td>
+                        <td>27th March, 2024</td>
+                    </tr>
+                    <tr>
+                        <td>UBS HRMS</td>
+                        <td>Dashboard Design</td>
+                        <td>01h 42m</td>
+                        <td>27th March, 2024</td>
+                    </tr>
+                    <tr>
+                        <td>UBS HRMS</td>
+                        <td>Admin Design</td>
+                        <td>01h 42m</td>
+                        <td>27th March, 2024</td>
+                    </tr>
+                    <tr>
+                        <td>UBS PMS</td>
+                        <td>App Design</td>
+                        <td>01h 42m</td>
+                        <td>27th March, 2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+        <!-- Attendance Box -->
+        <div class ="module">
+        <div class="box">
+            <h1 class="box-title">Your Attendance <a href="#" class="view-link">View</a></h1>
+            <table class="attendance-stats">
+                <tr>
+                    <td class="attendance-section">
+                        <span class="section-label">Present</span>
+                        <br><br>
+                        <span class="section-value" style="color:black">260</span>
+                    </td>
+                    <td class="attendance-section">
+                        <span class="section-label">Absent</span>
+                        <br><br>
+                        <span class="section-value" style="color:black">15</span>
+                    </td>
+                    <td class="attendance-section">
+                        <span class="section-label">Late Coming</span>
+                        <br><br>
+                        <span class="section-value" style="color:black">05</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Leave and Employee on Leave -->
+<div class ="module">
+<div class="container">
+    <div class="box-container">
+        <!-- Leave Box -->
+        <div class="box">
+            <h1 class="box-title">Your Leave <a href="#" class="view-link">View</a></h1>
+            <table class="leave-stats">
+                <tr>
+                    <td class="leave-section">
+                        <span class="section-label">Balanced</span>
+                        <br><br>
+                        <span class="section-value" style="color:black">12</span>
+                    </td>
+                    <td class="leave-section">
+                        <span class="section-label">Used</span>
+                        <br><br>
+                        <span class="section-value" style="color:black">04</span>
+                    </td>
+                    <td class="leave-section">
+                        <span class="section-label">Remaining</span>
+                        <br><br>
+                        <span class="section-value" style="color:black">08</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+      <!-- Employee on Leave Box -->
+      <div class ="module">
+      <div class="box">
+        <h1 class="box-title">Employees on leave <a href="#" class="view-link">View</a></h1>
+        <div class="employee-list">
+            <div class="employee">
+                <img src="https://cdn3.vectorstock.com/i/1000x1000/67/42/user-icon-vector-9916742.jpg" style="width: 20px;height: 20px;">
+                <span class="name">John Doe</span>
+                <span class="position">UI/UX Designer</span>
+                <span class="leave-date">23 March, 2024</span>
+            </div>
+            <div class="employee">
+                <img src="https://cdn3.vectorstock.com/i/1000x1000/67/42/user-icon-vector-9916742.jpg" style="width: 20px;height: 20px;">
+                  <span class="name">Nevine Acotanza</span>
+                  <span class="position">iOS Developer</span>
+                  <span class="leave-date">28 March, 2024</span>
+              </div>
+              <div class="employee">
+                <img src="https://cdn3.vectorstock.com/i/1000x1000/67/42/user-icon-vector-9916742.jpg" style="width: 20px;height: 20px;">
+                  <span class="name">Yvenide Belizaire</span>
+                  <span class="position">Wordpress Developer</span>
+                   <span class="leave-date">30 March, 2024</span>
+              </div>
+            <!-- Add more employees on leave as needed -->
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<!-- Upcoming Holidays and Birthdays -->
+<div class ="module">
+<div class="container">
+    <div class="box-container">
+        <!-- Upcoming Holidays Box -->
+        <div class="box">
+            <h1 class="box-title">Upcoming Holidays <a href="#" class="view-link">View</a></h1>
+            <div class="employee-list">
+                <div class="employee">
+                    <!-- Upcoming holidays content -->
+                </div>
+                <!-- Add more upcoming holidays as needed -->
+            </div>
+        </div>
+    </div>
+
+        <!-- Upcoming Birthdays Box -->
+        <div class ="module">
+        <div class="box">
+            <h1 class="box-title">Upcoming Birthdays <a href="#" class="view-link">View</a></h1>
+            <div class="employee-list">
+                <div class="employee">
+                    <!-- Upcoming birthdays content -->
+                </div>
+                <div class="employee">
+                    <img src="https://png.pngtree.com/png-clipart/20230215/ourmid/pngtree-holi-colors-splash-powder-png-image_6602987.png" style="width: 40px;height: 40px;">
+                      <span class="name">Holi</span>
+                      <span class="leave-date">26 March, 2024</span>
+                  </div>
+                  <div class="employee">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTieuuGy3BhQGlliLZpyqVuFj7HUWb8MWuCKg&usqp=CAU" style="width: 40px;height: 40px;">
+                      <span class="name">Diwali</span>
+                      <span class="leave-date">30 November, 2024</span>
+                  </div>
+                  <div class="employee">
+                    <img src="https://image.similarpng.com/very-thumbnail/2020/07/Colorful-christmas-tree-vector-png-.png" style="width: 40px;height: 40px;">
+                      <span class="name">Christmas</span>
+                      <span class="leave-date">25 December, 2024</span>
+                  </div>
+                  <div class="employee">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhh9gujHf2jDhZ-5YNzfW3sm0ngCFknu6oSg&usqp=CAU" style="width: 40px;height: 40px;">
+                      <span class="name">Sports Day</span>
+                      <span class="leave-date">30 Jul, 2024</span>
+                  </div>
+                <!-- Add more upcoming birthdays as needed -->
+            </div>
+        </div>
+    </div>
+</div>
+</div>

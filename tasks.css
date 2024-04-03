@@ -1,0 +1,44 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 550px;
+  margin-left: 120px;
+  padding: 16px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.view-link {
+  position: absolute;
+  top: 10;
+  right: 0;
+  font-size: 20px;
+  text-decoration: none;
+  color:blue;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,tr {
+  border: 1px solid #333;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #d9d2e9;
+}
+td{
+  padding: 5px;
+  color:grey;
+  background-color:white;
+}

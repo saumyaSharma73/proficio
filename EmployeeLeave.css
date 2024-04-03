@@ -1,0 +1,59 @@
+.on-leave-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 250px;
+    width: 500px;
+}
+.on-leave-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.week-dropdown {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.employee-list {
+    margin-top: 10px;
+}
+
+.employee {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.position {
+    color: #888;
+}
+
+.leave-date {
+    font-weight: bold;
+    color: #555;
+}
+.employee-container {
+    text-align: center;
+    width: 150px; /* Adjust width as needed */
+    margin: 0 auto; /* Center align */
+}
+
+.employee-image {
+    width: 100px; /* Adjust size of the image */
+    height: 100px; /* Adjust size of the image */
+    border-radius: 50%; /* Make the container circular */
+    margin: 0 auto; /* Center align */
+}
+
+.employee-name {
+    margin-top: 10px; /* Adjust spacing between image and name */
+}

@@ -1,0 +1,49 @@
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        background-image: url("");
+      }
+
+      #sidebar {
+        position: fixed;
+        top: 20px;
+        left: 0;
+        width: 125px;
+        height: 100%;
+        background-color: #1C4E80;
+        color: #fff;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-top: 50px;
+      }
+
+      #sidebar h3 {
+        margin: 0 0 10px;
+        font-size: 1.2em;
+      }
+
+      #sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 20px;
+      }
+
+      #sidebar li {
+        margin-bottom: 20px;
+      }
+
+      #sidebar a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+      
+      }
+
+      #sidebar a:hover {
+        color:blueviolet;
+
+      }
+

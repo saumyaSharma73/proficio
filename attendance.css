@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.attendance-container,
+.leave-container {
+    width: 15%;
+}
+
+.attendance-box,
+.leave-box {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.box-title {
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 20px;
+}
+
+.view-link {
+    text-decoration: none;
+    color: blue;
+}
+
+.attendance-stats,
+.leave-stats {
+    margin-top: 20px;
+}
+
+.attendance-section,
+.leave-section {
+    text-align: center;
+}
+
+.section-label {
+    font-weight: bold;
+    display: block;
+}
+
+.section-value {
+    font-size: 24px;
+    display: block;
+}
+.attbox{
+    width: 40%; /* Adjust width as needed */
+    margin: 20px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+}

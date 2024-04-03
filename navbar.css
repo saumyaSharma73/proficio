@@ -1,0 +1,62 @@
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 16px;
+    background-color:#1c4e80;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 98%; 
+    padding: 10px 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
+  }
+  
+  .title h5{
+    color:rgb(255, 255, 255);
+    font-size: large;
+    margin-top: 20px;
+  }
+  .logo {
+    width: 102px;
+    height: 92px;
+    margin-right: 1px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-search {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 4px;
+    margin-left: 50px;
+  }
+  
+  .search-input {
+    border: none;
+    background-color: transparent;
+    padding: 4px;
+    outline: none;
+    color: white;
+    flex-grow: 1;
+    width:600px;
+    
+  }
+  
+  .search-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    margin-left: 8px;
+    cursor: pointer;
+    
+  }
